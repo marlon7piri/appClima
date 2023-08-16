@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Rubik&family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+.container_principal {
+  background-image: url("assets/wallpaper.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  height: 100%;
+}
+
+.container_card {
+
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(22, 7, 7, 0.592);
+  width:100%;
+  height:100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.card {
+  background-color: #f5f7f8;
+ 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width:600px) {
+
+  .container_principal {
+    padding:20px;
+  }
+  .container_card{
+   
+   
+    width:100%;
+    height: 100%;
+      }
+
+      .card {
+        background-color: #f5f7f8;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+}
